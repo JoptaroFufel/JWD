@@ -6,9 +6,9 @@ public class Main {
         double aSide;
         double bSide;
 
-        aSide = Input.enterDoubleFromConsole("Катет а");
+        aSide = Input.enterPositiveDoubleFromConsole("Катет а");
 
-        bSide = Input.enterDoubleFromConsole("Катет b");
+        bSide = Input.enterPositiveDoubleFromConsole("Катет b");
 
         double area = Logic.problem3(aSide, bSide);
 
@@ -24,9 +24,9 @@ public class Main {
         Output.outputDoubleToConsole("Answer:", answer);
 
         /* Problem 9 */
-        int sizeOfFirstMassive = Input.enterIntFromConsole("Размер массива 1");
-        int sizeofSecondMassive = Input.enterIntFromConsole("Размер массива 2");
-        int entryPoint = Input.enterIntFromConsole("Точка вхождения");
+        int sizeOfFirstMassive = Input.enterPositiveIntFromConsole("Размер массива 1");
+        int sizeofSecondMassive = Input.enterPositiveIntFromConsole("Размер массива 2");
+        int entryPoint = Input.enterEntryPoint(sizeOfFirstMassive);
 
         int[] firstMassive = Input.enterIntMassiveFromConsole(sizeOfFirstMassive);
         int[] secondMassive = Input.enterIntMassiveFromConsole(sizeofSecondMassive);
@@ -39,7 +39,7 @@ public class Main {
         Output.outputIntMassive("Результат", resultMassive);
 
         /* Problem 10*/
-        int size = Input.enterIntFromConsole("Размер массива");
+        int size = Input.enterPositiveIntFromConsole("Размер массива");
 
         int[][] massive = new int[size][size];
 
